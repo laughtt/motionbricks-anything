@@ -1,0 +1,36 @@
+# local work: data, checkpoints, training outputs, builds, dependencies
+/work/
+/deps/
+build/
+__pycache__/
+*.py[oc]
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.bvh
+*.blend
+*.blend1
+*.fbx
+*.zip
+*.dll
+*.so
+*.dylib
+*.lib
+*.exe
+*.pdb
+*.obj
+.venv/
+venv/
+# models: only the shipped folders are tracked
+/models/*
+!/models/spider_v3/
+!/models/dog_v2/
+!/models/motionbricks_100mb/
+!/models/README.md
+# Godot
+.godot/
+*.import
+*.uid
+test_out/

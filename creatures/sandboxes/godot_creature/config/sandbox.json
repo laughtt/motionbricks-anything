@@ -1,0 +1,52 @@
+{
+ "_comment": "Sandbox settings. controls -> input_controller.gd exported values; brain -> DogBrain.configure(); bodies -> dog_driver.gd (Tab switches). Paths: res://, user://, absolute, or relative to the project folder.",
+ "model_dir": "../../models/spider_v3",
+ "threads": 2,
+ "controls": {
+  "walk_speed": 1.5,
+  "trot_speed": 3.5,
+  "slow_speed": 0.8,
+  "back_speed": 0.5,
+  "turn_rate": 0.8,
+  "turn_rate_trot": 0.6,
+  "turn_rate_stand": 1
+ },
+ "brain": {
+  "replan_frames": 12,
+  "idle_replan_frames": 28,
+  "crossfade_frames": 4,
+  "min_replan_gap": 4,
+  "replan_delta_speed": 0.25,
+  "replan_delta_yaw": 0.35,
+  "accel_forward": 2.5,
+  "accel_side": 1.5,
+  "accel_yaw": 5,
+  "grounding": true,
+  "ground_smooth": 0.25,
+  "root_orient": true,
+  "interpolate": true
+ },
+ "bodies": [
+  {
+   "name": "Spider SOMA (grey)",
+   "scene": "res://assets/spider_soma.glb",
+   "rest_mesh_min_y": 0.0041,
+   "color": [
+    0.45,
+    0.4,
+    0.36
+   ],
+   "camera": {
+    "distance": 7.5,
+    "focus_height": 0.7
+   },
+   "test": {
+    "walk": 1.5,
+    "fast": 3.5,
+    "turn": 0.6,
+    "speed_tolerance": 0.45,
+    "yaw_tolerance": 0.25
+   }
+  }
+ ]
+}

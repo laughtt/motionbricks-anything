@@ -22,3 +22,9 @@ imgui.ini
 checkpoints/
 
 .context/
+
+# Local experiments (private data, not for git)
+.experiments/
+
+# Private word list for creatures/tools/release_audit.py
+creatures/tools/.audit_private_words.txt

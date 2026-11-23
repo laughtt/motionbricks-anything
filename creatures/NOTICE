@@ -1,0 +1,19 @@
+MotionBricks Anything (creatures/)
+Copyright 2026 the MotionBricks Anything authors
+
+This work is based on NVIDIA MotionBricks (https://github.com/NVlabs/MotionBricks),
+Copyright (c) NVIDIA Corporation, licensed under the Apache License, Version 2.0.
+The upstream LICENSE file and the licenses/ folder at the root of this repository are unchanged.
+The code in creatures/ is licensed under the Apache License, Version 2.0.
+
+What we changed or added (everything is in the creatures/ folder; the upstream package is not modified):
+- creature/            the MotionBricks recipe for any skeleton: skeleton spec JSON, features for N joints and C contacts,
+                       an FSQ tokenizer per body plan, a small masked pose transformer, a root net, foot-skate losses, a capsule collision
+                       metric and repair, a runtime simulator, eval scripts, an ONNX exporter.
+- bodyplans/           the dog (quadruped) and spider body plans: skeleton specs, data scripts, a spider gait generator.
+- distill/             scripts that make the NVIDIA human model smaller (layer pick, distillation, quantization, gate).
+- runtime/             a C++ runtime with a C API and a Godot GDExtension (ONNX Runtime, CPU).
+- sandboxes/           a Godot project that drives a creature with the keyboard.
+- models/spider_v3/    spider weights (ONNX). Data attribution: bodyplans/spider/ATTRIBUTION.md.
+
+Third-party data, tools and libraries: see THIRD_PARTY.md.

@@ -1,0 +1,7 @@
+# Python packages for creatures/ (smoke test, training, ONNX export).
+# Tested 2026-11-23 on Windows, Python 3.12, CPU torch: torch 2.15.0, numpy 2.5.5, onnx 1.23.2, onnxruntime 1.32.0.
+torch>=2.9,<3
+numpy>=1.26,<3
+onnx>=1.17
+onnxruntime>=1.20
+# Optional: scipy (distill/rollout.py, tools/soma_to_3d/spider_landmarks.py), matplotlib (tools/soma_to_3d/spider_landmarks.py)

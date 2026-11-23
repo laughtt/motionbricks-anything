@@ -14,7 +14,7 @@ This model is intended for commercial and non-commercial motion-generation appli
 
 ### Where to Start
 
-- To run the demo, follow [Setup](../README.md#setup), then the commands under [Inference](#inference).
+- To run the demo, follow [Setup](../README_UPSTREAM.md#setup), then the commands under [Inference](#inference).
 - To add generation to an application, use the [runtime API](runtime_api.md#engines).
 - To export ONNX models from the SafeTensors checkpoint, follow the [exporter guide](../tools/onnx/README.md).
 

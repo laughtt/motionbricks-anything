@@ -1,0 +1,17 @@
+[configuration]
+entry_symbol = "dogbrain_library_init"
+compatibility_minimum = "4.7"
+reloadable = false
+
+[libraries]
+windows.editor.x86_64 = "res://addons/dogbrain/bin/dogbrain.dll"
+windows.debug.x86_64 = "res://addons/dogbrain/bin/dogbrain.dll"
+windows.release.x86_64 = "res://addons/dogbrain/bin/dogbrain.dll"
+linux.editor.x86_64 = "res://addons/dogbrain/bin/libdogbrain.so"
+linux.debug.x86_64 = "res://addons/dogbrain/bin/libdogbrain.so"
+linux.release.x86_64 = "res://addons/dogbrain/bin/libdogbrain.so"
+
+[dependencies]
+windows.editor.x86_64 = { "res://addons/dogbrain/bin/onnxruntime.dll": "" }
+windows.debug.x86_64 = { "res://addons/dogbrain/bin/onnxruntime.dll": "" }
+windows.release.x86_64 = { "res://addons/dogbrain/bin/onnxruntime.dll": "" }

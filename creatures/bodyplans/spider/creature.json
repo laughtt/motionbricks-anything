@@ -1,0 +1,22 @@
+{
+ "name": "spider",
+ "data": "../../work/spider/data/dataset.npz",
+ "out": "../../work/spider/train",
+ "fps": 30,
+ "heads": 5,
+ "levels": [
+  8,
+  8
+ ],
+ "skeleton": "spider_spec.json",
+ "eval": {
+  "walk": 1.5,
+  "trot": 3.5,
+  "back": -0.5,
+  "slow": 0.8,
+  "turn": 0.8,
+  "turn_trot": 0.6,
+  "turn_stand": 1
+ },
+ "val_split": "valsyn"
+}
